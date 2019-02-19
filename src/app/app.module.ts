@@ -15,7 +15,7 @@ import { InMemoryDatabase } from './in-memory-database';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-HttpClientModule,
+    HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDatabase)
   ],
   providers: [],
