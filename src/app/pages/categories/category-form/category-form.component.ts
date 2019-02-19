@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
+import { ActivatedRoute, Router } from '@angular/router'
+import { switchMap } from "rxjs/operators"
+import toastr from "toastr"
 
 @Component({
   selector: 'app-category-form',
@@ -6,6 +10,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./category-form.component.css']
 })
 export class CategoryFormComponent implements OnInit {
+
+
+  currentAction: string
+  categoryForm: FormGroup
+  pageTitle: string
+  serverErrorMessages: string[] = null
+  submittingForm: boolean = false
 
   constructor() { }
 
