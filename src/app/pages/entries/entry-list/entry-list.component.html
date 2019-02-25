@@ -38,17 +38,15 @@
 
       <td>
         <strong>{{entry.category.name}}</strong>
+        <!-- pre>{{entry | json}} </pre  -->
       </td>
 
 
       <td class='text-right'>
-        <strong [class.text-success]="'receita'
-        ==entry.type"
-        [class.text-danger]="'despesa'
-        ==entry.type"
-        >{{entry.amount}}</strong>
-        <br> 
-        < entry.paidText
+        <strong [class.text-success]="'receita'==entry.type"
+        [class.text-danger]="'despesa'==entry.type">{{entry.amount}}</strong>
+        <br>
+
       </td>
 
       <td class='text-center'>
