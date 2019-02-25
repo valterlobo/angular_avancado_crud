@@ -16,4 +16,7 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class EntriesRoutingModule { }
+export class EntriesRoutingModule {
+  static components = [ EntryListComponent , EntryFormComponent ];
+
+ }
