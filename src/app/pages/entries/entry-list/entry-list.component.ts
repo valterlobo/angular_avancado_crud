@@ -9,7 +9,12 @@ import { BaseResourceListComponent } from "../../../shared/components/base-resou
   styleUrls: ["./entry-list.component.css"]
 })
 export class EntryListComponent extends BaseResourceListComponent<Entry> {
+
+  public pageTitle: string;
+
   constructor(private entryService: EntryService) {
     super(entryService);
+    this.pageTitle = "Lista de Lançamentos";
+
   }
 }

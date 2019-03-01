@@ -12,8 +12,11 @@ import { CategoryService } from "../shared/category.service";
 export class CategoryListComponent extends BaseResourceListComponent<Category> {
 
 
+  public pageTitle: string;
+
   constructor(private categoryService: CategoryService) {
     super(categoryService);
+    this.pageTitle = "Lista de Categorias";
   }
 
 
